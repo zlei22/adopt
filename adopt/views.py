@@ -6,7 +6,6 @@ from .models import Pet
 from .forms import PetForm
 
 def all_pets(request):
-    text = ''
     pets = Pet.objects.all()
     context = {
             'pets': pets,
